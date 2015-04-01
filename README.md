@@ -39,6 +39,8 @@ Two additional notes:
 
 2) There are no tests for this lab; so in order to know it has worked, make sure you try running you methods with some dummy data of your own.
 
+3) `selectWithComparitor` should be built as an instance method, not a class method like `predicateWithBlock`.
+
 Go!
 
 
