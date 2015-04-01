@@ -45,4 +45,4 @@ Go!
 
 
 ##Advanced
-Now add in the BOOL* argument for `mapWithOperation:`.
+Now add in the BOOL* argument for `mapWithOperation:`. Note: This will not further your understanding of blocks, but it will teach you a little bit more about memory addresses.
