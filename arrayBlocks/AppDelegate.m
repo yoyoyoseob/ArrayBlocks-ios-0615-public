@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NSArray+BlockMethods.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSArray *test = @[@1, @2, @3];
+    [test mapWithBlock:^(id obj) {
+        NSLog(@"%@", @([(NSNumber *)obj integerValue] + 1));
+    }];
+
+    
+    NSArray *numbers = @[@4, @5, @7, @8, @10];
+    NSArray *evenArray = [numbers selectWithBlock:^BOOL(id obj) {
+        return [obj integerValue] % 2 == 0;
+    }];
+    NSLog(@"%@", evenArray);
+    
+    
     return YES;
 }
 

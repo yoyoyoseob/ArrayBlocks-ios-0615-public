@@ -14,6 +14,7 @@
 		317BBDC01A012AD400E50696 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317BBDBF1A012AD400E50696 /* Images.xcassets */; };
 		317BBDC31A012AD400E50696 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 317BBDC11A012AD400E50696 /* LaunchScreen.xib */; };
 		317BBDCF1A012AD400E50696 /* arrayBlocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 317BBDCE1A012AD400E50696 /* arrayBlocksTests.m */; };
+		71BC333B1B4C398A0053BA9F /* NSArray+BlockMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BC333A1B4C398A0053BA9F /* NSArray+BlockMethods.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		317BBDC81A012AD400E50696 /* arrayBlocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arrayBlocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		317BBDCD1A012AD400E50696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		317BBDCE1A012AD400E50696 /* arrayBlocksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = arrayBlocksTests.m; sourceTree = "<group>"; };
+		71BC33391B4C398A0053BA9F /* NSArray+BlockMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+BlockMethods.h"; path = "../NSArray+BlockMethods.h"; sourceTree = "<group>"; };
+		71BC333A1B4C398A0053BA9F /* NSArray+BlockMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+BlockMethods.m"; path = "../NSArray+BlockMethods.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +84,9 @@
 		317BBDB11A012AD400E50696 /* arrayBlocks */ = {
 			isa = PBXGroup;
 			children = (
-				317BBDB61A012AD400E50696 /* AppDelegate.h */,
-				317BBDB71A012AD400E50696 /* AppDelegate.m */,
-				317BBDB91A012AD400E50696 /* ViewController.h */,
-				317BBDBA1A012AD400E50696 /* ViewController.m */,
-				317BBDBC1A012AD400E50696 /* Main.storyboard */,
+				71BC33381B4C36C20053BA9F /* Models */,
+				71BC33371B4C36B70053BA9F /* Controllers */,
+				71BC33361B4C36A10053BA9F /* Views */,
 				317BBDBF1A012AD400E50696 /* Images.xcassets */,
 				317BBDC11A012AD400E50696 /* LaunchScreen.xib */,
 				317BBDB21A012AD400E50696 /* Supporting Files */,
@@ -117,6 +118,34 @@
 				317BBDCD1A012AD400E50696 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71BC33361B4C36A10053BA9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				317BBDBC1A012AD400E50696 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		71BC33371B4C36B70053BA9F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				317BBDB91A012AD400E50696 /* ViewController.h */,
+				317BBDBA1A012AD400E50696 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		71BC33381B4C36C20053BA9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71BC33391B4C398A0053BA9F /* NSArray+BlockMethods.h */,
+				71BC333A1B4C398A0053BA9F /* NSArray+BlockMethods.m */,
+				317BBDB61A012AD400E50696 /* AppDelegate.h */,
+				317BBDB71A012AD400E50696 /* AppDelegate.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +251,7 @@
 				317BBDBB1A012AD400E50696 /* ViewController.m in Sources */,
 				317BBDB81A012AD400E50696 /* AppDelegate.m in Sources */,
 				317BBDB51A012AD400E50696 /* main.m in Sources */,
+				71BC333B1B4C398A0053BA9F /* NSArray+BlockMethods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +442,7 @@
 				317BBDD41A012AD400E50696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		317BBDD51A012AD400E50696 /* Build configuration list for PBXNativeTarget "arrayBlocksTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +451,7 @@
 				317BBDD71A012AD400E50696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
